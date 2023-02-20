@@ -20,13 +20,12 @@ print_r($str);
 echo "\n----------------------Solution no.2--------------------------";
 echo PHP_EOL;
 
-function concat(string $a,string $b):string{
-  return $a.$b;
+function concat(string $a):string{
+  return $a.strrev($a);
 }
-$s1="I love ";
-$s2="my country";
-echo "The 1st string is = {$s1}\nThe 2nd string is = {$s2}\n";
-echo "After concatenation\n".concat($s1,$s2);
+$s1="Bangladesh";
+echo "Input string {$s1}\n";
+echo "After concatenation\n".concat($s1);
 
 
 /*3.Write a PHP function to remove the first and last element from an array and return the remaining elements as a new array.*/
