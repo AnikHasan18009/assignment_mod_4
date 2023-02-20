@@ -24,7 +24,7 @@ function concat(string $a):string{
   return $a.strrev($a);
 }
 $s1="Bangladesh";
-echo "Input string {$s1}\n";
+echo "Input string = {$s1}\n";
 echo "After concatenation\n".concat($s1);
 
 
