@@ -16,16 +16,21 @@ print_r($str);
 usort($str,'sortByLength');
 echo "\nAfter sorting\n";
 print_r($str);
+
+
+
 /* 2.Write a PHP function to concatenate two strings, but with the second string starting from the end of the first string.*/
 echo "\n----------------------Solution no.2--------------------------";
 echo PHP_EOL;
 
-function concat(string $a):string{
-  return $a.strrev($a);
+function concat(string $a ,string $b):string{
+  return $a.$b;
 }
-$s1="Bangladesh";
-echo "Input string = {$s1}\n";
-echo "After concatenation\n".concat($s1);
+$s2="Bangladesh";
+$s1="Beautiful";
+echo "1st string = {$s1}\n";
+echo "2nd string = {$s2}\n";
+echo "After concatenation\n".concat($s1,$s2);
 
 
 /*3.Write a PHP function to remove the first and last element from an array and return the remaining elements as a new array.*/
